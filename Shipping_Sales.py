@@ -25,7 +25,7 @@ if page == "Shipping Delay Prediction":
     # Load dataset
     @st.cache_data
     def load_data():
-        return pd.read_excel(r"C:\Users\sadaa\Downloads\walmart Retail Data.xlsx")
+        return pd.read_excel("walmart Retail Data.xlsx")
 
     def preprocess_data(df):
         df['Order Priority'] = df['Order Priority'].replace('Not Specified', np.nan)
